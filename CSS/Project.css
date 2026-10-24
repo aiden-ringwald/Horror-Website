@@ -1,0 +1,379 @@
+/* Main Body of the home page along with the skeleton of the sub-pages */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(14, 13, 13);
+    color: rgb(245, 240, 232);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(106, 5, 106);
+    color: rgb(252, 167, 9);
+    padding: 20px;
+    border-bottom: 4px solid rgb(252, 167, 9);
+    font-size: 40px;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 9px 13px;
+    color: rgb(245, 249, 237);
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    margin: 40px auto;
+    padding: 0px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(38, 40, 39);
+    padding: 25px;
+    border: 2px solid rgb(255, 117, 24);
+    border-radius: 8px;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Creepster', sans-serif;
+}
+
+body {
+    font-family: 'Lora', Georgia, serif;
+}
+
+/* All unique content of the Home page */
+.intro h2 {
+    color: orange;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 0;
+}
+
+.horror-collection {
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.horror-sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.horror-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: rgb(38, 38, 38);
+    border: 2px solid rgb(255, 117, 24);
+    border-radius: 8px;
+    min-width: 550px;
+}
+
+.horror-section a {
+    padding: 10px;
+    background-color: rgb(90, 25, 35);
+    color: rgb(225, 255, 255);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.horror-section a:hover {
+    background-color: rgb(154, 35, 47);
+    text-decoration: underline;
+}
+
+
+
+/* all content of the Movie Pages */
+.movies-page {
+    background-color: rgb(24, 13, 17);
+    color: rgb(248, 233, 235);
+}
+
+.movies-page h1,
+.movies-page h2 {
+    color: rgb(255, 125, 135);
+}
+
+.movies-page .entry-card {
+    background-color: rgb(43, 23, 28);
+    color: rgb(248, 233, 235);
+    border: 2px solid rgb(230, 55, 70);
+    border-radius: 8px;
+}
+
+.movies-page .entry-image {
+    height: 340px;
+    object-fit: contain;
+}
+
+.movies-page .entry-card:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.movies-page .entry-number {
+    color: rgb(230, 55, 70);
+}
+
+.movies-page .page-intro {
+    background-color: rgb(67, 15, 24);
+    border-bottom: 4px solid rgb(190, 35, 52);
+}
+
+.movies-page .site-header nav a:hover {
+    background-color: rgb(65, 17, 25);
+    color: rgb(255, 145, 155);
+}
+
+.movies-page .site-header {
+    background-color: rgb(48, 12, 19);
+    border-bottom-color: rgb(210, 35, 52);
+}
+
+
+
+/* All content of the Games page */
+.games-page {
+    background-color: rgb(17, 15, 31);
+    color: rgb(238, 235, 255);
+}
+
+.games-page h1,
+.games-page h2 {
+    color: rgb(205, 169, 255);
+}
+
+.games-page .entry-card {
+    background-color: rgb(34, 28, 55);
+    color: rgb(238, 235, 255);
+    border: 2px solid rgb(178, 115, 255);
+    border-radius: 8px;
+}
+
+.games-page .entry-image {
+    height: 340px;
+    object-fit: contain;
+}
+
+.games-page .entry-card:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.games-page .entry-number {
+    color: rgb(178, 115, 255);
+}
+
+.games-page .page-intro {
+    background-color: rgb(39, 25, 64);
+    border-bottom: 4px solid rgb(178, 115, 255);
+}
+
+.games-page .site-header nav a:hover{
+    background-color: rgb(42, 29, 65);
+    color: rgb(218, 195, 255);
+}
+
+.games-page .site-header {
+    background-color: rgb(31, 21, 52);
+    border-bottom-color: rgb(178, 115, 255);
+}
+
+
+
+/* All content of the shows page */
+.shows-page {
+    background-color: rgb(13, 26, 31);
+    color: rgb(226, 244, 242);
+}
+
+.shows-page h1,
+.shows-page h2 {
+    color: rgb(130, 235, 222);
+}
+
+.shows-page .entry-card {
+    background-color: rgb(24, 43, 49);
+    color: rgb(226, 244, 242);
+    border: 2px solid rgb(75, 205, 195);
+    border-radius: 8px;
+}
+
+.shows-page .entry-image {
+    height: 340px;
+    object-fit: contain;
+}
+
+.shows-page .entry-card:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.shows-page .entry-number {
+    color: rgb(75, 205, 195);
+}
+
+.shows-page .page-intro {
+    background-color: rgb(19, 48, 56);
+    border-bottom: 4px solid rgb(75, 205, 195);
+}
+
+.shows-page .site-header nav a:hover{
+    background-color: rgb(22, 65, 72);
+    color: rgb(130, 235, 222);
+}
+
+.shows-page .site-header {
+    background-color: rgb(15, 40, 47);
+    border-bottom-color: rgb(75, 205, 195);
+}
+
+
+
+
+/* All content of the Books Page */
+.books-page {
+    background-color: rgb(35, 26, 20);
+    color: rgb(249, 238, 218);
+}
+
+.books-page h1,
+.books-page h2 {
+    color: rgb(238, 202, 151);
+}
+
+.books-page .entry-card {
+    background-color: rgb(53, 40, 30);
+    color: rgb(249, 238, 218);
+    border: 2px solid rgb(211, 160, 95);
+    border-radius: 8px;
+}
+
+.books-page .entry-image {
+    height: 340px;
+    object-fit: contain;
+}
+
+.books-page .entry-number {
+    color: rgb(211, 160, 95);
+}
+
+.books-page .page-intro {
+    background-color: rgb(64, 43, 29);
+    border-bottom: 4px solid rgb(211, 160, 95);
+}
+
+.books-page .site-header nav a:hover{
+    background-color: rgb(64, 43, 29);
+    color: rgb(238, 202, 151);
+}
+
+.books-page .site-header {
+    background-color: rgb(54, 37, 25);
+    border-bottom-color: rgb(211, 160, 95);
+}
+
+
+
+/* all stylization of the media description boxes */
+.entry-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.entry-card {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+
+.entry-card p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 12px;
+}
+
+.entry-card h2 {
+    text-align: center;
+    margin: 12px 8px;
+}
+
+.entry-card a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 16px;
+    background-color: rgb(90, 25, 35);
+    color: rgb(255, 240, 240);
+    border: 1px solid rgb(230, 55, 70);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.entry-card a:hover {
+    background-color: rgb(154, 35, 47);
+    color: white;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.entry-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(15, 12, 14);
+}
+
+.page-intro {
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .entry-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .entry-image {
+        height: 260px;
+    }
+}
